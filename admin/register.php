@@ -1,13 +1,8 @@
 <?php
 session_start(); // Pastikan sesi dimulai
 
-// Redirect jika pengguna sudah login
-if (isset($_SESSION['logged_in'])) {
-    header("Location: /project/admin/dashboard.php");
-    exit;
-}
 include ('../db/conn.php');
-include ('../navbar.php');
+include ('../navbar.php'); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
@@ -20,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message = "Password dan konfirmasi password tidak cocok.";
     } else {
         // Hash password untuk keamanan
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Cek apakah email atau username sudah terdaftar
         $query = $conn->prepare("SELECT * FROM users WHERE username = ? OR userEmail = ?");
@@ -33,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             // Simpan data ke database
             $insert_query = $conn->prepare("INSERT INTO users (username, userEmail, userPassword) VALUES (?, ?, ?)");
-            $insert_query->bind_param("sss", $username, $email, $hashed_password);
+            $insert_query->bind_param("sss", $username, $email, $password);
             if ($insert_query->execute()) {
                 $success_message = "Registrasi berhasil! Silakan login.";
             } else {
@@ -43,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<link rel="stylesheet" href="../assests/style.css">
+<link rel="stylesheet" href="../assets/style.css">
 
 <div class="register-page">
     <div class="register-form">

@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Edit Movie</title>
 </head>
 <body>
@@ -53,7 +53,7 @@ session_start();
         $movieVideo = $movie['movieVid']; // Default to existing video
         if (!empty($_FILES['movieVideo']['name'])) {
             $movieVideo = basename($_FILES['movieVideo']['name']);
-            move_uploaded_file($_FILES['movieVideo']['tmp_name'], "./uploads/video/$movieVideo");
+            move_uploaded_file($_FILES['movieVideo']['tmp_name'], "./uploads/videos/$movieVideo");
         }
 
         // Update data ke database
@@ -74,7 +74,7 @@ session_start();
 
         if ($updateStmt->execute()) {
             echo "<p class='sucess-crud'>Movie Updated sucessfully</p>";
-            echo "<p class='sucess-crud'><a href='/project/admin/dashboard.php' class='sucess-crud-redirect'>Return to Dashboard</a></p>";
+            echo "<p class='sucess-crud'><a href='./admin/dashboard.php' class='sucess-crud-redirect'>Return to Dashboard</a></p>";
         } else {
             echo "<p class:'sucess-edit'>Terjadi kesalahan saat memperbarui data.</p>";
         }

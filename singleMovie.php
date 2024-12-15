@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Watch Your Favorite Movies</title>
 </head>
 <body>
@@ -39,10 +39,10 @@ session_start();
     ?>
 
     <!-- <div class="movie-player">
-        <video src="./assests/video/minions.mp4" poster="./assests/img/Avenger.jpg" controls></video>
+        <video src="./assets/video/minions.mp4" poster="./assets/img/Avenger.jpg" controls></video>
     </div>
     <div class="single-movie-card">
-        <img src="./assests/img/Avenger-poster.jpg" alt="">
+        <img src="./assets/img/Avenger-poster.jpg" alt="">
         <div class="movie-info">
             <h3>Avengers End Game (Years)</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti ex nobis temporibus quidem quae? Voluptatibus fugiat beatae reiciendis. Accusantium, repellendus minima cum assumenda odit quaerat totam quae laboriosam cumque tenetur?</p>

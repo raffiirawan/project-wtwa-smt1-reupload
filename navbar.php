@@ -18,12 +18,13 @@ $genre_result = $conn->query($genre_query);
                 <a href="/project/index.php">All Movies</a>
                 <!-- <a href="/project/genre.php">Genre</a> -->
                 <a href="/project/admin/dashboard.php">Dashboard</a>
+                <a href="/project/admin/register.php">Add User</a>
                 <a href="/project/admin/logout.php">Logout</a>
             <?php else: ?>
                 <!-- Jika belum login -->
                 <a href="/project/index.php">All Movies</a>
                 <!-- <a href="/project/genre.php">Genre</a> -->
-                <a href="/project/register.php">Login</a>
+                <a href="/project/admin/login.php">Login</a>
             <?php endif; ?>
         </div>
     </nav>

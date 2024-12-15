@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<link rel="stylesheet" href="../assests/style.css">
+<link rel="stylesheet" href="../assets/style.css">
 
 <div class="login-page">
     <div class="login-form">

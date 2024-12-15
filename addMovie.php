@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sqlMovie) === TRUE) {
         echo "<p class='sucess-crud'>Movie added sucessfully</p>";
-        echo "<p class='sucess-crud'><a href='/project/admin/dashboard.php' class='sucess-crud-redirect'>Kembali ke Dashboard</a></p>";
+        echo "<p class='sucess-crud'><a href='./admin/dashboard.php' class='sucess-crud-redirect'>Kembali ke Dashboard</a></p>";
     } else {
         echo "Error: " . $sqlMovie . "<br>" . $conn->error;
     }
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Add Movie</title>
 </head>
 <body>

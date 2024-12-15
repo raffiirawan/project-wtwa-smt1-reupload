@@ -9,13 +9,13 @@ if (isset($_SESSION['logged_in'])): ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assests/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <?php
-    include "../db/conn.php";
-    include "../navbar.php";
+    include ('../db/conn.php');
+    include ('../navbar.php'); 
     ?>
     <div class="movie-collection">
         <h1>Movie Collection</h1>
@@ -52,6 +52,6 @@ if (isset($_SESSION['logged_in'])): ?>
             ?>
         </table>
     </div>
-    <script src="../assests/script.js"></script>
+    <script src="../assets/script.js"></script>
 </body>
 </html>

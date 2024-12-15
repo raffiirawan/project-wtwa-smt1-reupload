@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "movie";
-$password = "movie";
-$db = "movie-stream";
+$username = "root";
+$password = "";
+$db = "movie";
 
 // // Create connection
 $conn = mysqli_connect($servername, $username, $password, $db);

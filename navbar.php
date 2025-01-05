@@ -23,7 +23,6 @@ $genre_result = $conn->query($genre_query);
             <?php else: ?>
                 <!-- Jika belum login -->
                  <form action="">
-                    <!-- <label for="movieSearch">Search...</label> -->
                     <input type="text" name="movieSearch" placeholder="Search...">
                  </form>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>

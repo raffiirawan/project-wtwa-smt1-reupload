@@ -6,21 +6,41 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Online Streaming</title>
     <meta name="keywords" content="film, streaming, nonton, lk21, netflix, idlix, nonton gratis, streaming film, nonton film">
     <meta name="google-site-verification" content="ZvdngaxpRmcYN58x8TXLUhVZd4EH0WIOFVWUEQimClY" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-zinc-100">
     <?php
     include "./db/conn.php";
     include "navbar2.php";
     ?>
+
     
 <!-- Movie List -->
+    <div class="p-3">
+        <h2 class="text-2xl font-semibold text-gray-800">Newest Movie</h2>
+    </div>
+<div class="w-screen flex p-3 gap-2">
+    <div class="text-center">
+        <img class="h-60" src="./uploads/posters/minions-poster.jpg">
+        <h3 class="text-lg text-black font-medium">Minions</h3>
+        <p class="text-sm text-slate-500">2015</p>
+    </div>
+    <div class="text-center">
+        <img class="h-60" src="./uploads/posters/Evangelion-poster.jpg">
+        <h3 class="text-lg text-black font-medium">Evangelion</h3>
+        <p class="text-sm text-slate-500">1995</p>
+    </div>
+    <div class="text-center">
+        <img class="h-60" src="./uploads/posters/Avenger-poster.jpg">
+        <h3 class="text-lg text-black font-medium">Avengers Endgame</h3>
+        <p class="text-sm text-slate-500">2019</p>
+    </div>
+</div>
+
     <!-- <div class="movie-collection">
         <?php
             $sql = "SELECT idMovie, movieImg, movieTitle, movieReleaseYear FROM moviedata";
@@ -41,8 +61,5 @@ session_start();
             }
         ?>
     </div> -->
-
-    <!-- <script src="script.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

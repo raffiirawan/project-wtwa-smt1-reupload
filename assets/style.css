@@ -31,6 +31,10 @@ header {
     margin-right: 50px;
     padding: 0 20px 0 10px;
 }
+.nav-list {
+  display: flex;
+  gap: 8px;
+}
 .navbar h1, .navbar a {
     color: var(--highlight-font);
     text-decoration: none;

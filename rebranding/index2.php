@@ -26,12 +26,16 @@ session_start();
         </div>
     <div class="w-screen flex p-3 gap-2">
         <div class="text-center">
-            <img class="h-60" src="../uploads/posters/minions-poster.jpg">
+            <a href="singleMovie2.php">
+                <img class="h-60" src="../uploads/posters/minions-poster.jpg">
+            </a>
             <h3 class="text-lg text-black font-medium">Minions</h3>
             <p class="text-sm text-slate-500">2015</p>
         </div>
         <div class="text-center">
-            <img class="h-60" src="../uploads/posters/Evangelion-poster.jpg">
+            <a href="singleMovie2.php">
+                <img class="h-60" src="../uploads/posters/Evangelion-poster.jpg">
+            </a>
             <h3 class="text-lg text-black font-medium">Evangelion</h3>
             <p class="text-sm text-slate-500">1995</p>
         </div>
